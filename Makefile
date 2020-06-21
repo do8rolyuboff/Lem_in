@@ -44,7 +44,7 @@ WHITE = "\033[0m"
 
 all: $(NAME)
 
-$(NAME): $(LIBFT) $(OBJECTS) ./src/lem_in.c
+$(NAME): $(LIBFT) $(OBJECTS) src/lem_in.c
 		@$(CC) $(CFLAGS) -o $(NAME) ./src/lem_in.c $(OBJECTS) -I $(LIBFT_PATH) -L $(LIBFT_PATH) -lft
 		@echo $(WHITE_B) lem-in $(WHITE)created.
 

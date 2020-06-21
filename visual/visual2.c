@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   visual2.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: btrifle <btrifle@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/01 13:54:48 by ogeonosi          #+#    #+#             */
-/*   Updated: 2020/06/01 13:59:28 by btrifle          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "visual.h"
 
 void		print_tail_and_system(FILE *file, t_map *f)
@@ -17,9 +5,9 @@ void		print_tail_and_system(FILE *file, t_map *f)
 	fprintf(file, "],\n\"ants\": %d,\n", f->ants);
 	fprintf(file, "\"paths_count\": %d\n", f->current_path + 1);
 	fprintf(file, "}\n");
-	system("if ! ps aux | grep -v grep | grep 'php -S localhost:8080'\
-		&>/dev/null; then php -S localhost:8080 &>/dev/null & fi");
-	system("open -a \"Google Chrome\" http://localhost:8080/visual/");
+	system("if ! ps aux | grep -v grep | grep 'php -S localhost:8001'\
+		&>/dev/null; then php -S localhost:8001 &>/dev/null & fi");
+	system("open -a \"Google Chrome\" http://localhost:8001/visual/");
 }
 
 void		visual2(t_map *f)
