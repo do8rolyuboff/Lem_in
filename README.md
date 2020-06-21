@@ -43,5 +43,5 @@
 `./lem_in -v < map-flow-thousand`
 
 У вас откроется окно браузера, в котором вы наглядно сможете увидеть движение муравьев по "ферме"
-[!vis](https://github.com/do8rolyuboff/Lem_in/blob/master/other/visual.gif)
+![vis](https://github.com/do8rolyuboff/Lem_in/blob/master/other/visual.gif)
 
